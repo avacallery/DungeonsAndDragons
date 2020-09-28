@@ -7,6 +7,7 @@ import com.avacallery.Die;
 
 public class Hand {
     private List<Die> dice = new ArrayList<Die>();
+    public int natural20 = 20;
 
     public Hand(int size, int sides) {
         for (int numberOfSides = 0; numberOfSides < size; numberOfSides++)
@@ -16,7 +17,6 @@ public class Hand {
     public void rollDice(Random random) {
         for (var die : dice) {
             die.roll(random);
-
         }
     }
 
