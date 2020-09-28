@@ -18,12 +18,12 @@ public class Main {
     public static void main(String[] args) {
         Random random = new Random();
 
-        Hand firstRoll = new Hand(1);
+        Hand firstRoll = new Hand(1, 20);
 
         firstRoll.rollDice(random);
         Console.showDice(firstRoll.getDice());
 
-        Hand secondRoll = new Hand(2);
+        Hand secondRoll = new Hand(2, 20);
         secondRoll.rollDice(random);
         Console.showDice(secondRoll.getDice());
 

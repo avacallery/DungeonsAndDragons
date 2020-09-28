@@ -7,13 +7,13 @@ public class Die {
     private int sides;
 
     public Die(int sides) {
-        this.sides = 20;
+        this.sides = sides;
         this.value = 1;
     }
 
     public void roll(Random random) {
 
-        value = random.nextInt(20) + 1;
+        value = random.nextInt(sides) + 1;
     }
 
     public int getValue() {
