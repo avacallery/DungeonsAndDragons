@@ -23,17 +23,6 @@ public class Main {
         firstRoll.rollDice(random);
         Console.showDice(firstRoll.getDice());
 
-
-        int criticalHit = 20;
-        int criticalMiss = 1;
-
-            if (firstRoll.equals(criticalHit)) {
-                System.out.println("Critical hit!");
-            }
-            if (firstRoll.equals(criticalMiss)) {
-                System.out.println("Critical miss!");
-            }
-
         Hand secondRoll = new Hand(2, 20);
         secondRoll.rollDice(random);
         Console.showDice(secondRoll.getDice());

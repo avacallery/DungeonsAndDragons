@@ -7,7 +7,6 @@ import com.avacallery.Die;
 
 public class Hand {
     private List<Die> dice = new ArrayList<Die>();
-    public int natural20 = 20;
 
     public Hand(int size, int sides) {
         for (int numberOfSides = 0; numberOfSides < size; numberOfSides++)

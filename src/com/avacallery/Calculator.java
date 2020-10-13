@@ -14,6 +14,28 @@ public class Calculator {
 
     }
 
+    public static void attack(int value, int defenseModifier) {
+
+        if (value == 20) {
+            System.out.println("Critical hit!");
+        }
+
+        if (value == 1) {
+            System.out.println("Critical miss!");
+        }
+
+        if (value < defenseModifier) {
+            System.out.println("Miss");
+        }
+
+        if (value > defenseModifier) {
+            System.out.println("Hit");
+        }
+
+    }
+
+
+
 
 
 }
